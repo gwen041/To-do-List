@@ -13,11 +13,15 @@ async function fetchTasks () {
     const taskName = document.createElement('span');
     const checkBtn = document.createElement('button');
     const delBtn = document.createElement('button');
+    
+    taskRow.title = task.created_at;
 
     checkBtn.textContent = '✓';
     delBtn.textContent = 'Del';
 
     taskRow.className = 'task-item';
+    checkBtn.className= 'check btn';
+    delBtn.className = 'delete btn';
     taskRow.dataset.id = task.id;
 
     taskName.textContent = task.title;

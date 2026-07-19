@@ -55,5 +55,15 @@ body {
 
 .completed {
   text-decoration: line-through;
-  color: pink;
+  color: hsl(350, 94%, 79%);
 }
+
+.check {background-color: hsl(120, 45%, 72%);}
+.delete{background-color: rgb(215, 115, 135);}
+.add {background-color: hsl(350, 91%, 83%);}
+.btn {cursor:pointer;}
+
+.check:hover {background-color: hsl(120, 41%, 55%);}
+.delete:hover{background-color: rgb(234, 27, 68);}
+.add:hover {background-color: hsl(350, 85%, 72%);}
+#task-input:hover {background-color: hsl(340, 100%, 92%); color: hsl(350, 33%, 43%);}
